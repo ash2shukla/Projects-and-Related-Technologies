@@ -1,8 +1,8 @@
-# -*- coding: UTF-8 -*-
-#!/usr/bin/env python3
+# Project Related Technologies Crash Course
+### A repository for content delivered Project-Related-Technologies-Crash-Course@ABESIT
 
-def main():
-    pass
-
-if __name__ == "__main__":
-    main()
+#### Day1
+1. Working with various Data Formats.
+2. Pickling in Python.
+3. Elementry Knowledge of Multithreading in Python.
+4. Reading and Writing Media (A/V/I) with Python.
