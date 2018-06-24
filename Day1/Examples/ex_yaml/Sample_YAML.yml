@@ -1,0 +1,18 @@
+key: value
+key with space: value
+key for integer: 10
+# Although not necessary but YAML should have 2 space indent
+nested map:
+  map key: 1
+  map key2: 2
+# This is a comment
+a sequence:
+  - Item 1
+  - Item 2
+  - Item 3
+
+# These are complex keys, these can have multiple lines and also can be more than strings
+? Item1
+  Item2
+: [ 2001-01-01, 2002-02-02 ]
+# Date time values get typecasted to datetime objects when parsed

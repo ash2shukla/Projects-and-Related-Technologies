@@ -1,0 +1,7 @@
+<note id="some_id">
+	Text for note tag
+	<to attr1="value1" attr2="value2">TO_value</to>
+	<from>From_value</from>
+	<heading attr1="value3">Heading_value</heading>
+	<body attr2="value4">Body_value</body>
+</note>
