@@ -1,5 +1,5 @@
-# Project Related Technologies Crash Course
-### A repository for content delivered Project-Related-Technologies-Crash-Course@ABESIT
+# Projects and Related Technologies
+### A repository for content delivered Projects-and-Related-Technologies@ABESIT
 
 #### Day1
 1. Working with various Data Formats.
