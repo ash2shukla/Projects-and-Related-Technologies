@@ -47,7 +47,7 @@ def write_excel():
 
 
 def main():
-    read_excel()
+    #read_excel()
     write_excel()
 
 

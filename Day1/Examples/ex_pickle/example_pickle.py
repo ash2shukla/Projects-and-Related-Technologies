@@ -18,6 +18,7 @@ def pickle_load():
     y = load(open('X.pkl', 'rb'))
     print(y.attr)
 
+
 if __name__ == "__main__":
     pickle_dump()
     pickle_load()

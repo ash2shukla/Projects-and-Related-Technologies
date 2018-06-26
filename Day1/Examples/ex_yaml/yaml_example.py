@@ -18,7 +18,7 @@ def dump_yaml():
     print(yaml.dump([1,2,3]))
 
 def main():
-    dump_yaml()
+    load_yaml()
 
 
 if __name__ == "__main__":

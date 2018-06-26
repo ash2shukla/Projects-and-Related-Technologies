@@ -8,7 +8,7 @@ def parse_existing():
     file_pointer = open('Sample_XML.xml')
     root = etree.fromstring(file_pointer.read())
     print('The note node=', root)
-    print(etree.tostring(root, pretty_print=True).decode())
+    print(etree.tostring(root, pretty_print=True))
     # Each Tag and content is called an element.
     # Each element's name is called tag
     print('Root Element Tag=', root.tag)

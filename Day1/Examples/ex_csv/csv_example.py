@@ -19,7 +19,7 @@ def read_csv_dict():
     file_pointer = open('Sample_CSV.csv')
     csv_reader = csv.DictReader(file_pointer)
     for line in csv_reader:
-        print(line)
+        print(dict(line))
 
     file_pointer.close()
 
@@ -56,11 +56,11 @@ def sniff_header(filename):
 
 
 def main():
-    read_csv_list()
-    read_csv_dict()
-    write_csv_list()
-    write_csv_dict()
-    sniff_header('Sample_CSV.csv')
+    #read_csv_list()
+    #read_csv_dict()
+    #write_csv_list()
+    #write_csv_dict()
+    sniff_header('NewDictCSV.csv')
 
 
 if __name__ == "__main__":
