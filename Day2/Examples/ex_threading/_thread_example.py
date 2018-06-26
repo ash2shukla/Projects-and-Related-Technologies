@@ -3,14 +3,14 @@
 from _thread import start_new_thread
 
 
-def function_to_run_in_thread(name):
+def function_to_run_in_thread():
     for i in range(5):
-        print(name, i)
+        print(i)
 
 
 def main():
-    start_new_thread(function_to_run_in_thread, ("Thread-1",))
-    start_new_thread(function_to_run_in_thread, ("Thread-2",))
+    start_new_thread(function_to_run_in_thread, ())
+    start_new_thread(function_to_run_in_thread, ())
     while True:
         # Keep waiting so that we can see thread's output
         pass

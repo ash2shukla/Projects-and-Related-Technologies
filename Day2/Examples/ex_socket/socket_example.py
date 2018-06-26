@@ -14,6 +14,7 @@ def test_socket_client(website):
     """
     # AF_INET stands for IPv4 and SOCK_STREAM means TCP Protocol
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    print(s)
     host_ip = get_server_ip(website)
     s.connect((host_ip, 80))
     # laddr is localaddress ie. our address on the network (which is internet for this example)
@@ -23,7 +24,7 @@ def test_socket_client(website):
 
 
 def main():
-    get_server_ip('www.google.com')
+    # get_server_ip('www.google.com')
     test_socket_client('www.google.com')
 
 if __name__ == "__main__":

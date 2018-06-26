@@ -4,18 +4,18 @@ from threading import Thread
 
 
 class CounterThread(Thread):
-    def __init__(self, name):
-        Thread.__init__(self)
-        self.name = name
+    # def __init__(self, name):
+    #     Thread.__init__(self)
+    #     self.name = name
 
     def run(self):
         for i in range(5):
-            print(self.name, i)
+            print( i)
 
 
 def main():
-    CounterThread("Thread-1").start()
-    CounterThread("Thread-2").start()
+    CounterThread().start()
+    CounterThread().start()
 
 if __name__ == "__main__":
     main()
