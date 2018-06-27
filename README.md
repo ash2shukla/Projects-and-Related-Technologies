@@ -6,7 +6,11 @@
 2. Pickling in Python.
 3. Reading and Writing Media (A/V/I) with Python.
 
-#### Day2
-A Practical Introduction To Networks and Cryptography,
-HTTP and Websockets and Building a HTTP Server From
-Scratch
+#### Day2 <img src="https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png" width="25" height="25"/>
+1. Multithreading in Python.
+2. A Practical Introduction To Networks and HTTP, Building a HTTP Server From Scratch
+
+#### Day3
+1. A Practical Introduction To Cryptography
+2. Revisiting Docker with Dockerfiles and docker-compose
+3. Working with Databases in Python. (PostgreSQL, MongoDB, Redis)

@@ -1,0 +1,11 @@
+# docker-compose.yml
+
+version: '2'
+
+services:
+  webserver:
+    build: .
+    ports:
+     - "8000:8000"
+    volumes:
+     - ~/content_base:/content
