@@ -1,0 +1,11 @@
+>> django-admin startproject PROJECT_NAME
+
+# Go inside the directory of project ie. cd PROJECT_NAME
+
+>> django-admin startapp APP_NAME
+
+>> python manage.py runserver IP:PORT
+
+eg. python manage.py runserver 0.0.0.0:8000
+
+# By default the server runs in localhost ie. We can not access it on any other device
