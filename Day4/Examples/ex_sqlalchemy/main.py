@@ -12,7 +12,7 @@ db_path = 'sqlite:///' + path.join(getcwd(), 'testdb')
 print(db_path)
 # connect to database echo=True will show all SQL queries that
 # this engine will create and run
-engine = create_engine(db_path, echo=False)
+engine = create_engine(db_path, echo=True)
 
 
 # Usually there exist some Tables in Relational Database
@@ -30,27 +30,27 @@ session = Session()
 
 def crud():
     # Create an object of mapping
-    mymapping_object = MyMapping(name='ed', fullname='Ed Jones', password='edspassword')
-    # see what the object of mapping contains
-    print('\nThe mapping object is=>')
-    print(mymapping_object)
-    # add the object of mapping to the session to commit later
-    session.add(mymapping_object)
-    # Adding a lot of objects (rows) to the session to commit later
-    session.add_all([
-            MyMapping(name='ed1', fullname='Ed Jones1', password='edspassword1'),
-            MyMapping(name='ed2', fullname='Ed Jones2', password='edspassword2')
-        ])
-    # see what is pending to be committed
-    print('\nPending to be commited after addition in session=>')
-    print(session.new)
-    # want to update something?
-    # just modify the corresponding attribute of that object
-    mymapping_object.name = 'eddy'
-    print('\nPending to be commited after changes in session=>')
-    print(session.new)
-    # Commit the queries to the database
-    session.commit()
+    # mymapping_object = MyMapping(name='ed', fullname='Ed Jones', password='edspassword')
+    # # see what the object of mapping contains
+    # print('\nThe mapping object is=>')
+    # print(mymapping_object)
+    # # add the object of mapping to the session to commit later
+    # session.add(mymapping_object)
+    # # Adding a lot of objects (rows) to the session to commit later
+    # session.add_all([
+    #         MyMapping(name='ed1', fullname='Ed Jones1', password='edspassword1'),
+    #         MyMapping(name='ed2', fullname='Ed Jones2', password='edspassword2')
+    #     ])
+    # # see what is pending to be committed
+    # print('\nPending to be commited after addition in session=>')
+    # print(session.new)
+    # # want to update something?
+    # # just modify the corresponding attribute of that object
+    # mymapping_object.name = 'eddy'
+    # print('\nPending to be commited after changes in session=>')
+    # print(session.new)
+    # # Commit the queries to the database
+    # session.commit()
     # Reading from data base
     # query the database that if the name attribute is any of the strings from ed, ed1 or ed2
     results = session.query(MyMapping).filter(MyMapping.name.in_(['ed', 'ed1', 'ed2']))
@@ -63,6 +63,7 @@ def crud():
 
 def main():
     crud()
+    # pass
 
 
 if __name__ == "__main__":

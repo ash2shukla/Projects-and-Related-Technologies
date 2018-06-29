@@ -16,7 +16,7 @@ class MyMapping(Base):
     password = Column(String)
 
     def __repr__(self):
-       string = f"<User(name={self.name}, fullname={self.fullname}, password={self.password})>"
+       string = f"<MyMapping(name={self.name}, fullname={self.fullname}, password={self.password})>"
        return string
 
 
