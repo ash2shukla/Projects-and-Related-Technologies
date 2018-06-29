@@ -1,0 +1,16 @@
+<script>
+var url = 'ws://localhost:8000/demo_socket/';
+var ws = new WebSocket(url);
+ws.onopen = function (response) {
+    console.log(response);
+    ws.send(JSON.stringify({message: 'my message'}));
+    }
+ws.onmessage = function (message) {
+    console.log(JSON.parse(message.data));    
+    }
+
+ws.onclose = function (response) {
+    console.log(response);
+    }
+
+</script>
