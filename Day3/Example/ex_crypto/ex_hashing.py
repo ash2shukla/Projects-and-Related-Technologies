@@ -5,7 +5,7 @@ import hmac
 
 
 def hashes():
-    string = b'string_to_hash'
+    string = b'strin_to_hash'
     print(hashlib.sha256(string).hexdigest())
 
     content = open('sample.wav', 'rb').read()

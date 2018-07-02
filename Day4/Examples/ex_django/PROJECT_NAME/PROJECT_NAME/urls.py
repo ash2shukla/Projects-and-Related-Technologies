@@ -15,13 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import JsonResponse
-
-
-def function(request):
-    # print(request)
-    return JsonResponse({"key": "value"})
-
+from APP_NAME.views import function
 
 urlpatterns = [
     path('', function),

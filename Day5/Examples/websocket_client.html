@@ -1,16 +1,32 @@
-<script>
-var url = 'ws://localhost:8000/demo_socket/';
-var ws = new WebSocket(url);
-ws.onopen = function (response) {
-    console.log(response);
-    ws.send(JSON.stringify({message: 'my message'}));
-    }
-ws.onmessage = function (message) {
-    console.log(JSON.parse(message.data));    
-    }
+<html>
+	<body>
+		<input type="text" id="name">
+		<button onclick="submitName()">Submit To Socket</button>
+	</body>
+	<script>
+	
+	function submitName() {
+		var id = document.getElementById('name').value;
+		ws.send(JSON.stringify({event: 'hello', id: id}));
+	}
 
-ws.onclose = function (response) {
-    console.log(response);
-    }
+	var url = 'ws://localhost:8000/demo_socket/';
+	var ws = new WebSocket(url);
 
-</script>
+	ws.onopen = function (response) {
+	    console.log(response);
+	    ws.send(JSON.stringify({message: 'my message'}));
+	}
+
+	ws.onmessage = function (message) {
+		var parsed = JSON.parse(message.data);
+		console.log('Parsed message is ', parsed);
+		document.getElementById("count").innerHTML = parsed.message;  
+	    }
+
+	ws.onclose = function (response) {
+	    console.log(response);
+	    }
+
+	</script>
+</html>

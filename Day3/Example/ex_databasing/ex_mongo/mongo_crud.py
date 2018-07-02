@@ -25,9 +25,8 @@ def crud():
     print('One Inserted', one_res)
     # Insert many documents
     many_res = col_conn.insert_many([{ "name": "Jeorge", "salary": 100}, 
-                          { "name": "Steve", "salary": 100},
-                          { "name": "David", "salary": 100}]
-                        )
+                          {"name": "Steve", "salary": 100},
+                          {"name": "David", "salary": 100}])
     print('Many Inseretd', many_res)
     # Find one document
     print(col_conn.find_one())

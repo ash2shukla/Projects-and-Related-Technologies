@@ -16,13 +16,13 @@ def generated_XKCD_pass(length):
 
 
 def get_token_bytes(length):
-    return secrets.token_bytes(length)
+    return secrets.token_bytes(length).hex()
 
 
 def main():
     print(get_token_bytes(4))
-    print(generated_XKCD_pass(4))
-    print(generate_random_pass(4))
+    # print(generated_XKCD_pass(4))
+    # print(generate_random_pass(4))
 
 
 if __name__ == "__main__":

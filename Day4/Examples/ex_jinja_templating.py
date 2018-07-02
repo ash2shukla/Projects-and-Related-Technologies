@@ -15,5 +15,5 @@ def html_template():
 
 
 if __name__ == "__main__":
-    string_template()
+    # string_template()
     html_template()
