@@ -173,3 +173,32 @@ $4
 LPOP
 $23
 asgi:specific.xVGJVfKd!
+*2
+$6
+SELECT
+$1
+0
+*3
+$5
+RPUSH
+$23
+asgi:specific.QvVdiAFK!
+$92
+ƒ¤typeªsomemethod¤textµthis is my custom msg°__asgi_channel__¾specific.QvVdiAFK!gHXrqLljNjCN
+*2
+$4
+LPOP
+$23
+asgi:specific.QvVdiAFK!
+*3
+$5
+RPUSH
+$23
+asgi:specific.mtTjwdmi!
+$92
+ƒ¤typeªsomemethod¤textµthis is my custom msg°__asgi_channel__¾specific.mtTjwdmi!RKuUdNAwrvPQ
+*2
+$4
+LPOP
+$23
+asgi:specific.mtTjwdmi!

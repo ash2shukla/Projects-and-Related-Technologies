@@ -22,6 +22,7 @@ def qr_to_base64():
     qr_stream = BytesIO()
     img_obj.save(qr_stream)
     qr_bytes = qr_stream.getvalue()
+    print(qr_bytes)
     print(base64.b64encode(qr_bytes).decode())
 
 

@@ -1,32 +1,30 @@
 <html>
 	<body>
-		<input type="text" id="name">
-		<button onclick="submitName()">Submit To Socket</button>
+		<img id="qrimg" src=""/>
 	</body>
 	<script>
-	
-	function submitName() {
-		var id = document.getElementById('name').value;
-		ws.send(JSON.stringify({event: 'hello', id: id}));
-	}
 
+	function onOpenRunthis(response) {
+		ws.send(JSON.stringify({'message': 'moremessage'}));
+	}
 	var url = 'ws://localhost:8000/demo_socket/';
 	var ws = new WebSocket(url);
+	ws.onopen = onOpenRunthis;
 
-	ws.onopen = function (response) {
-	    console.log(response);
-	    ws.send(JSON.stringify({message: 'my message'}));
-	}
+	// ws.onopen = function (response) {
+	//     console.log(response);
+	//     ws.send(JSON.stringify({message: 'my message'}));
+	// }
 
 	ws.onmessage = function (message) {
 		var parsed = JSON.parse(message.data);
 		console.log('Parsed message is ', parsed);
-		document.getElementById("count").innerHTML = parsed.message;  
+		document.getElementById("qrimg").setAttribute('src', parsed.message);  
 	    }
 
-	ws.onclose = function (response) {
-	    console.log(response);
-	    }
+	// ws.onclose = function (response) {
+	//     console.log(response);
+	//     }
 
 	</script>
 </html>

@@ -30,3 +30,6 @@
 2. Integrating WebSockets with REST
 3. Javascript 101 - A fastboot to Javascript with JQuery and ES6
 
+#### Day7
+1. Angular101
+
