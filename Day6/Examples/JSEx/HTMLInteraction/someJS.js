@@ -7,24 +7,20 @@ console.log(userAgent);
 
 window.alert('Some Useless alert');
 var reply = confirm('Yes no?');
-console.log(reply);
-var value = prompt('Give some value?');
-console.log(value);
 
 console.log('Simple Log');
 console.error('Error Log');
 console.info('Information log');
 console.warn('Warning Log');
 
-var paragraphs = document.getElementsByTagName("p");
+var img = document.getElementById("asd");
 // getElementById
 // getElementByClassName
-console.log(paragraphs);
+console.log(img);
 
 // getAttribute
 // setAttribute
 // innerHTML
-paragraphs[0].innerHTML = 'Changed Content';
 
-paragraphs[0].setAttribute('style', 'font-size:20px');
+img.setAttribute('src', 'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==');
 console.log(paragraphs[0].getAttribute('style'));

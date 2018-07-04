@@ -7,11 +7,13 @@ console.log(parseFloat("10.2"));   // e => 10.2
 
 
 // to String
+console.log('#### String');
 console.log(String(false));        // a => "false"
 console.log(String(10));           // b => "10"
 console.log(String(10.2));         // c => "10.2"
 console.log((10).toString());      // d => "10"
 
+console.log('#### Boolean')
 // to Boolean
 console.log(Boolean(10));          // a => true
 console.log(Boolean(0));           // b => false

@@ -9,7 +9,7 @@ $(document).ready(function(){
 	 $.ajax({
       url: "https://jsonplaceholder.typicode.com/posts/1",
       type: "GET",
-      dataType: "html",
+      dataType: "json",
       // data: data, data should  not be sent with GET
       success: handleResponse,
     });

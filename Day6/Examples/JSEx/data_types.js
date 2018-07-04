@@ -21,10 +21,10 @@ Their important methods are - slice, substr, split, replace, match, search, inde
 */
 var string = "I am a string";
 console.log("The length of string is", string.length);
-console.log("Slice->", string.slice(1,4));
-console.log("Substr->", string.substr(1,4)); 
-console.log("Split->", string.split());
-var regex = '[a-zA-Z ]*';
+console.log("Slice->", string.slice(0,5));
+console.log("Substr->", string.substr(0,5)); 
+console.log("Split->", string.split(' '));
+var regex = '[a-zA-Z ]+';
 console.log("Match->", string.match(regex));
 console.log("Search-> Provides index of the match only", string.search(regex));
 console.log("indexOf->", string.indexOf('T'));
