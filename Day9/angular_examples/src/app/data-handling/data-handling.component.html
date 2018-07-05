@@ -1,0 +1,48 @@
+
+The data member of class dataHandling is = {{data}}
+
+A List of data in class dataHandling is = 
+
+<ul>
+	<li *ngFor="let data of bunch_of_data">{{data}}</li>
+</ul>
+
+
+An object of data in class dataHandling is = 
+
+{{some_object}}
+
+property1 is {{some_object.property1}}
+
+property2 is {{some_object.property2}}
+
+
+<div *ngIf="some_object.property1 == 'Value1'">
+	<p>Yes property1 is indeed Value1</p>
+</div>
+
+## Below is example of Bindings. There are two types of bindings - 
+1. Property Binding [property]="expression"
+2. Event Binding (event)="expression"
+
+
+Event Binding
+<p (click)="id_of_p.hidden=!id_of_p.hidden">Toggle Using Me</p>
+
+
+Property Binding
+<p [innerHTML]="some_variable" #id_of_p>Toggle Me please</p>
+
+
+<input (change)="changeSomeVariable(id_of_input.value)" #id_of_input/>
+
+<br/>
+Two way bound variable-
+In order to use Two Way Binding we must include FormsModule from @angular/forms in app.module.ts
+
+<input (change)="logit(id_of_input2.value + ' ' + two_way_bound)" [(ngModel)]="two_way_bound" #id_of_input2/>
+
+Changing classes
+<p [ngClass]="classes">This text's class is bound</p>
+
+<button [style.color]="isSpecial ? 'red': 'green'" (click)="isSpecial=!isSpecial">Red</button>

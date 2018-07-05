@@ -1,0 +1,29 @@
+Some event play
+<input #box (keyup)="0"/>
+<p>{{box.value}}</p>
+
+
+Declaring a form and using its values
+
+<form (submit)="logit(formx.value)" #formx="ngForm">
+	<input name="input1" [(ngModel)]="inpu1"/>
+	<input name="input2" [(ngModel)]="inpu2"/>
+	<input type="submit">
+</form>
+
+
+Reactive Style of Form Declaration
+In order to use this we need to import ReactiveFormsModule from @angular/forms and include it in app.module.ts
+
+<form (submit)="logit(xform)" [formGroup]="xform">
+	<input formControlName="inputx1"/>
+	<input formControlName="inputx2"/>
+	<input type="submit">
+</form>
+
+{{ xform.value | json }}
+
+<br>
+To access a single element in a form group we can do xform.get('formControlName')
+To check if an element is valid or not corresponding to set validators we can check
+element status using element.status

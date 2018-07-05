@@ -1,0 +1,7 @@
+<p #id_of_p>
+  lifecycle works!
+</p>
+<input (change)="id_of_p.innerHTML=id_of_input.value" #id_of_input>
+
+
+<p (click)="event_to_others.emit('Some value')">Whenver clicked inside this element it will emit an event for others</p>
