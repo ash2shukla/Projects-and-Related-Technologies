@@ -14,8 +14,8 @@ class StatelessBody extends StatelessWidget {
 }
 
 class StatefulBody extends StatefulWidget {
-	final someattr;
-	final child;
+//	final someattr;
+//	final child;
 
 	@override
 	_StatefulWidget createState() => _StatefulWidget();
@@ -23,7 +23,6 @@ class StatefulBody extends StatefulWidget {
 
 class _StatefulWidget extends State<StatefulBody> {
 	int count = 0;
-	List<BottomNavigationBarItem> items = new List();
 
 	void incrementCount() {
 		setState(() { count += 1; });

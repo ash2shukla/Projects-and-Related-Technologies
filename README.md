@@ -25,11 +25,23 @@
 3. Building a QR Authentication REST Backend
 4. Colored I/O on terminal. ANSI Escape Sequence. <Bonus!>
 
-#### Day6
+#### Day6 <img src="https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png" width="25" height="25"/>
 1. JWT Authentication
 2. Integrating WebSockets with REST
 3. Javascript 101 - A fastboot to Javascript with JQuery and ES6
 
-#### Day7
+#### Day7 <img src="https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png" width="25" height="25"/>
 1. Angular101
+
+#### Day8 <img src="https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png" width="25" height="25"/>
+1. Angular101 with Introduction to Reactive Programming
+
+#### Day9 <img src="https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png" width="25" height="25"/>
+1. Angular Examples
+2. Flutter101
+
+#### Day10 <img src="https://cdn3.iconfinder.com/data/icons/simple-web-navigation/165/tick-512.png" width="25" height="25"/>
+1. Flutter App Examples, HTTP and WS
+2. Discussion About Usage of Flutter, Angular and Django to make projects and Architecture of QR Authentication App.
+3. The way forward.
 
